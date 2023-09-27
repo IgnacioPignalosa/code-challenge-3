@@ -1,0 +1,9 @@
+.boton{
+    width: 1.9em;
+    height: 1.9em;
+    background-image: url(image/file-x.svg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
