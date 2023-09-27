@@ -25,7 +25,7 @@ function editar(id, data) {
     })
     .then(response => {
         if (response.ok) {
-            return response.json();
+            return response;
         } else {
             throw new Error('Error al editar el elemento.');
         }
@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('botonBorrar')){
             // Si se hace clic en un botón de borrado, obtener el ID y borrar
             let id = e.target.id;
-            console.log(id);
             borrar(id)
         } else if (e.target.classList.contains('botonEditar')){
             // Si se hace clic en un botón de edición, obtener el ID y mostrar los datos en el formulario
