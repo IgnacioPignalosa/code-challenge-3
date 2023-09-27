@@ -17,21 +17,48 @@
       <table id="tablaDatos" class="table table-dark table-hover" style="border:  5px; border-radius: 10px;">
         <h2>Lista</h2>
         <tr>
+          <th>Nº</th>
           <th>Nombre</th>
           <th>Apellido</th>
           <th>Grupo</th>
           <th>Sala</th>
-          <th></th>
+          <th>Editar</th>
+          <th>Borrar</th>
         </tr>
         <tbody class="table-group-divider" id="listaDatos">
         </tbody>
       </table>
     </div>
   </div>
+
+  <div class="container text-left hidden" id="ingresar">
+    <br><br>
+  <h3>Modifique sus Datos</h3><br>
+  <div class="divLogin">
+    <div class= "form-floating">
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+    <label>Nombre</label>
+    </div>
+    <div class= "form-floating">
+    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+    <label>Apellido</label>
+    </div>
+    <div class= "form-floating">
+        <input type="number" class="form-control" id="grupo" placeholder="Puntos">
+        <label>Grupo</label>
+    </div>
+    <div class= "form-floating">
+        <input type="number" class="form-control" id="sala" placeholder="Sala">
+        <label>Sala</label>
+    </div>
+    <br><br>
+    <button class="btn btn-success" type="button" id="enviar" > Guardar </button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
